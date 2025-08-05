@@ -1,6 +1,117 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Michroma&family=Nata+Sans:wght@100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Tektur:wght@400..900&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: calibri;
+  color:white;
+}
+.space {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #ff6a00 0%,         /* Hot orange at base */
+    #ff9100 5%,         /* Smooth transition to warm */
+    #2c003e 30%,        /* Deep purple transition */
+    #0b0b24 60%,        /* Space blue */
+    #000000 100%        /* Full black at top */
+  );
+}
+.rocket{
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 120px;
+  background: url('myImages/myRocket.png') no-repeat center center;
+  background-size: contain;
+  z-index: 2;
+}
+
+
+/* Nav bar Material */
+nav{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  padding: 20px;
+  z-index: 2;
+}
+nav .menu {
+  display: flex;
+  gap: 50px;
+  font-family: "Tektur", sans-serif;
+}
+.menu h4{
+  font-family: "Tektur", sans-serif;
+  font-weight: 300;
+  color:#cfd9ff;
+}
+.menu h4:hover {
+  color: #ff6a00; /* Change color on hover */
+  text-shadow: 0 0 10px #ff9100;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* star field */
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1; /* Ensure stars are behind other content */
+  /* background-color: red; */
+}
+
+
+
+/* Logo */
+.logo{
+  height: 50px;
+}
+
+/* Welcome speech */
+.welcome {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-family: "Michroma", sans-serif;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 4.2rem;
+  z-index: 2;
+}
+.journey {
+  position: absolute;
+  bottom:20%;
+  left: 50%;
+  font-family: "Michroma", sans-serif;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  z-index: 2;
+}
+.Instruction {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(12, 86, 247);
+  font-size: 1rem;
+  z-index: 2;
+  font-family: "Tektur", sans-serif;
+  text-shadow: 0px 0px 2px white;
 }

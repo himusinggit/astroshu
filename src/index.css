@@ -46,7 +46,7 @@ nav{
   align-items: center;
   height: 10%;
   padding: 20px;
-  z-index: 2;
+  z-index: 3;
 }
 nav .menu {
   display: flex;
@@ -86,7 +86,7 @@ nav .menu {
 /* Welcome speech */
 .welcome {
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   top: 30%;
   left: 50%;
   font-family: "Michroma", sans-serif;
@@ -94,7 +94,7 @@ nav .menu {
   text-align: center;
   color: white;
   font-size: 4.2rem;
-  z-index: 2;
+  z-index: 3;
 }
 .journey {
   position: absolute;
@@ -118,11 +118,22 @@ nav .menu {
   font-size: 1rem;
   z-index: 2;
   font-family: "Tektur", sans-serif;
-  text-shadow: 0px 0px 2px cyan;
+  text-shadow: 0.5px 0.5px  cyan;
 }
 
 /* Audio controls */
 audio{
   position: absolute;
   z-index: 2;
+}
+
+/* mouseFollower */
+.mouseFollower{
+  width: 70px;
+  height: 70px;
+  background-image: url('myImages/moon.png');
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
 }

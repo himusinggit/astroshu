@@ -48,6 +48,13 @@ function Stars() {
         }
         // cd.closePath();
     }
+    window.onresize=()=>{
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        for(let i=0;i<particleCount;i++){
+            // allParticles[i].draw();
+        }
+    }
     animate();
     },[]);
     return (

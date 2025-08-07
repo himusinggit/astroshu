@@ -10,6 +10,9 @@
   color:white;
   user-select: none;
 }
+body{
+  cursor: none;
+}
 .space {
   width: 100%;
   height: 100vh;
@@ -61,7 +64,7 @@ nav .menu {
 .menu h4:hover {
   color: #ff6a00; /* Change color on hover */
   text-shadow: 0 0 10px #ff9100;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: color 0.3s ease;
 }
 
@@ -129,11 +132,28 @@ audio{
 
 /* mouseFollower */
 .mouseFollower{
-  width: 70px;
-  height: 70px;
-  background-image: url('myImages/moon.png');
+  width: 50px;
+  height: 50px;
+  background-image: url('cursor.svg');
   background-size: contain;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   pointer-events: none;
+}
+.trail{
+  position: relative;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  transform: translate(100%, 100%);
+}
+.trailets{
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(100%, 100%);
 }

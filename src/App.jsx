@@ -50,6 +50,7 @@ function App() {
     
   },[]);
   return (
+    <>
     <div className="space">
       <audio autoPlay>
         <source src="music/background.mp3" type="audio/mpeg" />
@@ -62,6 +63,8 @@ function App() {
       <h2 className='journey'>Journey</h2>
       <h3 className='Instruction'>Scroll to start</h3>
     </div>
+    <div className="footer"></div>
+    </>
   )
 }
 

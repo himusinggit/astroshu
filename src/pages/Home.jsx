@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
-import Rocket from './components/Rocket.jsx'
-import Nav from './components/Nav.jsx'
-import Stars from './components/Stars.jsx'
+import Rocket from '../components/Rocket.jsx'
+import Nav from '../components/Nav.jsx'
+import Stars from '../components/Stars.jsx'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import Mouse from './components/Mouse.jsx'
-import Permission from './components/Permission.jsx'
+import Mouse from '../components/Mouse.jsx'
+import Permission from '../components/Permission.jsx'
 function App() {
   const welcome = useRef(null);
   useGSAP(() => {
@@ -50,7 +50,7 @@ function App() {
   },[]);
   return (
     <>
-    
+    <Permission></Permission>
     <div className="space">
       <audio autoPlay>
         <source src="music/background.mp3" type="audio/mpeg" />

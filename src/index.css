@@ -87,24 +87,32 @@ nav .menu {
 }
 
 /* Welcome speech */
-.welcome {
+.welcomecover{
+  width: 100%;
+  height: auto;
+  display:flex;
+  justify-content: center;
   position: absolute;
-  /* width: 100%; */
-  top: 30%;
-  left: 50%;
+  top: 25%;
+}
+.journeycover{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom:25%;
+}
+.welcome {
+  position: relative;
   font-family: "Michroma", sans-serif;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: 4.2rem;
   z-index: 3;
 }
 .journey {
-  position: absolute;
-  bottom:20%;
-  left: 50%;
   font-family: "Michroma", sans-serif;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: 4rem;
@@ -137,12 +145,12 @@ audio{
   background-image: url('cursor.svg');
   background-size: contain;
   position: absolute;
-  z-index: 4;
+  z-index: 100;
   pointer-events: none;
 }
 .trail{
   position: relative;
-  z-index: 3;
+  z-index: 100;
   width: 20px;
   height: 20px;
   background-color: yellow;
@@ -153,6 +161,7 @@ audio{
   position:absolute;
   width: 20px;
   height: 20px;
+  z-index: 100;
   background-color: red;
   border-radius: 50%;
   transform: translate(100%, 100%);
@@ -169,3 +178,62 @@ audio{
   /* border-top-left-radius: 20px;
   border-top-right-radius: 20px; */
 }
+
+
+/* permissions page */
+.ask{
+  width: 100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  z-index: 8;
+  background-color: black;
+}
+.permission{
+  width:60vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:3vw;
+  align-items: center;
+  background-color: black;
+}
+.permission h1{
+  font-family: "Tektur", sans-serif;
+  font-size: 5rem;
+  color: white;
+}
+.enterBtn{
+  width: 20vw;
+  height: 10vh;
+  position: relative;
+  background-color: black;
+  border:2px solid #09008c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Tektur", sans-serif;
+  font-size: 2rem;
+  color: white;
+  overflow: hidden;
+}
+.enterBtn div{
+  position:absolute;
+  width: 30px;
+  left:-5%;
+  top:110%;
+  aspect-ratio: 1;
+  background-color: #09008c;
+  transform:translate(-50%, -50%);
+  border-radius: 50%;
+  transition:all 0.6s ease;
+}
+
+.enterBtn:hover div {
+  width:800px;
+}
+

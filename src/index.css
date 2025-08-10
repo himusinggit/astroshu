@@ -10,13 +10,12 @@
   color:white;
   user-select: none;
 }
-body{
-  cursor: none;
-}
+
 .space {
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  cursor: none;
   background: linear-gradient(
     to top,
     #ff6a00 0%,         /* Hot orange at base */
@@ -171,12 +170,13 @@ audio{
 /* footer */
 .footer{
   width: 100%;
-  height: 0.5%;
+  height: 1%;
   z-index: 3;
   position: absolute;
-  background-color: black;
-  /* border-top-left-radius: 20px;
-  border-top-right-radius: 20px; */
+  margin-top: 200vh;
+  background-color: transparent;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 

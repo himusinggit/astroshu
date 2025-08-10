@@ -18,22 +18,22 @@ export function animation() {
 
   // Animate welcome out to the left
   tl.to(".welcome", {
-    duration: 2,
+    // duration: 2,
     opacity: 0,
     x: -150,
     ease: "power2.out",
-    delay: 0.2, // delay before starting this animation
+
   });
 
   // Animate journey out to the right simultaneously
   tl.to(".journey", {
-    duration: 2,
+    // duration: 2,
     opacity: 0,
     x: 150,
     ease: "power2.out",
   }, "<");  // start at same time as previous
   tl.to(".Instruction", {
-    duration: 1,
+    // duration: 1,
     opacity: 0,
     y: 50,
     delay: 1,

@@ -63,20 +63,25 @@ function App() {
 
   return (
     <>
-    
-    <div className="space">
       <audio autoPlay>
         <source src="music/background.mp3" type="audio/mpeg" />
       </audio>
-      <div className='welcomecover'><h1 ref={welcome} className='welcome'>Welcome To The</h1></div>
-      <Stars></Stars>
+    <div className="viewFrame">
       <Nav></Nav>
       <Mouse></Mouse>
       <Rocket></Rocket>
+    <Stars></Stars>
+    <div className="storyBoard">
+    <div className="mercury"></div>
+    <div className="space">
+      <div className='welcomecover'><h1 ref={welcome} className='welcome'>Welcome To The</h1></div>
       <div className='journeycover'><h2 className='journey'>Journey</h2></div>
       <h3 className='Instruction'>Scroll to start</h3>
     </div>
+    </div>
+    </div>
    <div className="footer"></div> 
+   
     </>
   )
 }

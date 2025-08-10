@@ -45,7 +45,7 @@ window.addEventListener('mousemove', handleMouseMove);
     
     },[])
 
-    return (<div ref={wrap}>
+    return (<div style={{height:'0px'}} ref={wrap}>
         <div ref = {mouse} className='mouseFollower'></div>
         <div ref={trail} className="trail"></div>
         </div>

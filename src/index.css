@@ -10,12 +10,22 @@
   color:white;
   user-select: none;
 }
-
+/* body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera 
+} */
+ .viewFrame {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+  /* background-color: black; */
+ }
 .space {
   width: 100%;
   height: 100vh;
-  position: fixed;
-  cursor: none;
+  position: relative;
+  
   background: linear-gradient(
     to top,
     #ff6a00 0%,         /* Hot orange at base */
@@ -24,7 +34,7 @@
     #0b0b24 60%,        /* Space blue */
     #000000 100%        /* Full black at top */
   );
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .rocket{
   position: absolute;
@@ -237,3 +247,17 @@ audio{
   width:800px;
 }
 
+
+/* storyBoard */
+.storyBoard {
+  margin-top: -50vh;
+}
+/* Planets */
+
+/* Mercury */
+.mercury {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
